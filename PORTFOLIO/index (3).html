@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(73, 72, 75);
+        }
+        .portfolio > h1{
+            font-family: sans-serif;
+            margin: 20px;
+            color: aqua;
+        }
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contents h3{
+            font-size: 20px;
+            color:white;
+        }
+        .contents > h3 span {
+            color: aqua;
+            font-family: sans-serif;
+        }
+
+        .profile > img {
+            height: 200px;
+            width: 165px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 600px) {
+            
+            .content {
+                display: flex;
+                justify-content:center;
+                flex-direction: column;
+                align-items:flex-start;
+                margin: 20px;
+            }
+            .contents > h3 {
+                font-size: 20px;
+                color: white;
+            }
+            .profile{
+                margin-top: 20px;
+            }
+        }
+        .about{
+            margin: 20px;
+        }
+        .about h2{
+            font-size: 20px;
+            color: aqua;
+        }
+        .about p{
+            font-size: 17px;
+            color: white;
+        }
+
+        .flex-container h2{
+            font-size: 20px;
+            color: aqua;
+            margin: 20px;
+        }
+        
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flex-box {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            flex: 1;
+        }
+        .flex-box > img {
+            height: 50px;
+            width: 50px;
+            border-radius: 15px;
+
+        }
+        .project h2{
+            font-size: 20px;
+            color: aqua;
+            margin: 20px;
+        }
+
+        .contact h2{
+            font-size: 20px;
+            color: aqua;
+        }
+        .container h2{
+            align-items:left;
+        }
+
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .contact-form h3{
+           font-size: 20px;
+           margin-bottom: 20px;
+           color: aliceblue;
+        }
+        .form-group{
+            margin-bottom: 20px;
+        }
+        input,textarea{
+            width: 100%;
+            padding: 10px 50px;
+            border-radius: 8px;
+            border:none;
+            border-color: black;
+            color: #333;
+        }
+        input:focus
+        textarea:focus{
+            outline: none;
+            box-shadow:0 0 8px #bbb ;
+        }
+        button{
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            color: aliceblue;
+            background-color: rgb(3, 3, 49);
+        }
+        .contact-info{
+            text-align: left;
+            border: black;
+        }
+        .contact-info h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: aliceblue;
+        }
+        .contact-info p{
+            margin-bottom: 10px;
+            color: aliceblue;
+            border-style: solid;
+            border-color: #bbb;
+            font-size: 20px;
+        }
+        .contact-info i{
+            color: black;
+            margin: 10px;
+            height: 10px;
+            color: rgb(249, 253, 5);
+        }
+        @media (max-width:487px) {
+            .contact-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-content:center;
+            }
+            .contact-info {
+                margin-top: 20px;
+            }
+        }
+        footer p{
+            font-size: 20px;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="portfolio">
+        <h1>Portfolio.</h1>
+    </div>  
+
+    <div class="content">
+        <div class="contents">
+            <h3>Hi!</h3>
+            <h3>I'm <span> Irom Deepakumar Singh,</span></h3>
+            <h3>Frontend Developer.</h3>
+        </div>
+        <div class="profile">
+            <img src="pic/IMG-png 1.png" alt="photos">
+        </div>    
+    </div>
+
+    <section class="about">
+        <h2>About :</h2>
+        <p>
+            Put in hard work and keep learning.Explore new opportunity
+        </p>
+    </section>
+    
+    <div class="flex-container">
+        <h2>Skills:</h2>
+        <div class="container">
+            <div class="flex-box">
+                <img src="pic/html-5_5968267.png" >
+                <h4>HTML</h4>
+            </div>
+            <div class="flex-box">
+                <img src="pic/css-3_5968242.png" >
+                <h4>CSS</h4>
+            </div>
+            <div class="flex-box">
+                <img src="pic/js_5968292.png" >
+                <h4>Javascript</h4>
+            </div>    
+            <div class="flex-box">
+                <img src="pic/git_6038629.png">
+                <h4>Git</h4>
+            </div>    
+            <div class="flex-box">
+                <img src="pic/github_3291695.png">
+                <h4>Github</h4>
+            </div>
+            <div class="flex-box">
+                <img src="pic/figma_5968705.png">
+                <h4>Figma</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Projects:</h2>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <h2>Contact :</h2>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="name" name="name" placeholder="Your Name">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email">
+                        
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i>+91 9863048743</p>
+                <p><i class="fas fa-envelope"></i>deepakirom171@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Imphal,Manipur,India</p>
+            </div>
+        </div>
+    </div> 
+    <br>
+    <footer>
+        <p>web Design</p>
+    </footer>   
+</body>
+</html>
